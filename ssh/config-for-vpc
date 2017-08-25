@@ -1,0 +1,19 @@
+Host 10.0.1.*
+  ProxyCommand ssh us-east-1a.vpc.vistarmedia.com nc %h %p
+Host 10.0.3.*
+  ProxyCommand ssh us-east-1b.vpc.vistarmedia.com nc %h %p
+Host 10.0.5.*
+  ProxyCommand ssh us-east-1d.vpc.vistarmedia.com nc %h %p
+
+Host 10.0.*
+  StrictHostKeyChecking no
+  LocalForward 55432 vistar-db.cl9vznw0mj2u.us-east-1.rds.amazonaws.com:5432
+  LocalForward 55439 vistar-reporting.cgwb1htj4tcz.us-east-1.redshift.amazonaws.com:5439
+  LocalForward 55539 vistar-adserver-logs.cgwb1htj4tcz.us-east-1.redshift.amazonaws.com:5439
+ 
+Host *.vpc.vistarmedia.com
+  StrictHostKeyChecking no
+  LocalForward 55432 vistar-db.cl9vznw0mj2u.us-east-1.rds.amazonaws.com:5432
+  LocalForward 54432 inventory-mgmt.cl9vznw0mj2u.us-east-1.rds.amazonaws.com:5432
+  LocalForward 55439 vistar-reporting.cgwb1htj4tcz.us-east-1.redshift.amazonaws.com:5439
+  LocalForward 55539 vistar-adserver-logs.cgwb1htj4tcz.us-east-1.redshift.amazonaws.com:5439

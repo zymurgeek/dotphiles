@@ -33,7 +33,7 @@ dotsyncrc
 #grc
 #input/editrc
 #input/inputrc
-#irssi
+irssi
 #mpd/mpd.conf
 #mercurial/hgrc
 #mercurial/hgignore
@@ -57,11 +57,12 @@ dotsyncrc
 #screen/screenrc
 #shell/hushlogin
 #shell/urlview
+spacemacs
 #ssh
 #subversion
 #task/task
 #task/taskrc
-#tmux/tmux.conf
+tmux/tmux.conf
 #tmux/tmuxinator
 #vim/dotvim:.vim
 #vim/vimrc
