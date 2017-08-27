@@ -91,5 +91,6 @@ tmux/tmux.conf
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 vistar-dgreenbaum                git=ANY
 jennings                         git=ANY
+carmine                          git=ANY
 [endhosts]
 
