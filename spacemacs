@@ -347,6 +347,7 @@ you should place your code here."
   ; http://www.gnu.org/software/emacs/manual/html_node/ccmode/c_002doffsets_002dalist.html#c_002doffsets_002dalist
   ; test with C-c C-s
   ; and save with M-x customize-variable c-offsets-alist
+  (spacemacs/toggle-smartparens-globally-off)
 )
 
 (custom-set-variables
