@@ -40,7 +40,7 @@ values."
      javascript
      react
      typescript
-     java
+     ; java
      ; https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/scala
      scala
      ;; ----------------------------------------------------------------
@@ -335,8 +335,8 @@ you should place your code here."
   (setq-default dotspacemacs-line-numbers t)
   (setq-default large-file-warning-threshold 100000000)
   (add-to-list 'auto-mode-alist '("\\.tsx$" . typescript-mode))
-  (setq eclim-eclipse-dirs '("~/eclipse")
-        eclim-executable "~/eclipse/eclim")
+  ;(setq eclim-eclipse-dirs '("~/eclipse")
+  ;      eclim-executable "~/eclipse/eclim")
   (setq magit-repository-directories '("~/repos/"))
   (require 'whitespace)
   (setq whitespace-style '(face tabs trailing lines-tail))
@@ -355,7 +355,11 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(c-offsets-alist (quote ((arglist-intro . ++) (arglist-cont-nonempty . ++)))))
+ '(c-offsets-alist
+   (quote
+    ((arglist-intro . +)
+     (arglist-cont . +)
+     (arglist-cont-nonempty . +)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
