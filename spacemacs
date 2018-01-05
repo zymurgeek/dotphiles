@@ -348,6 +348,8 @@ you should place your code here."
   ; test with C-c C-s
   ; and save with M-x customize-variable c-offsets-alist
   (spacemacs/toggle-smartparens-globally-off)
+  ; Disable auto-insertion of matching quotes and parentheses
+  (add-hook 'java-mode-hook (lambda () (smartparens-mode -1)))
 )
 
 (custom-set-variables
@@ -359,7 +361,8 @@ you should place your code here."
    (quote
     ((arglist-intro . +)
      (arglist-cont . +)
-     (arglist-cont-nonempty . +)))))
+     (arglist-cont-nonempty . +))))
+ '(smartparens-global-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
