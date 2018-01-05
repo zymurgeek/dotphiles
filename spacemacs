@@ -40,8 +40,8 @@ values."
      javascript
      react
      typescript
-     ; java
-     ; https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/scala
+     ;; java
+     ;; https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/scala
      scala
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -61,7 +61,7 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
-     xkcd
+     ;; xkcd
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
