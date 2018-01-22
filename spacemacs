@@ -350,6 +350,7 @@ you should place your code here."
   (spacemacs/toggle-smartparens-globally-off)
   ; Disable auto-insertion of matching quotes and parentheses
   (add-hook 'java-mode-hook (lambda () (smartparens-mode -1)))
+  (add-hook 'javascript-mode-hook (lambda () (smartparens-mode -1)))
 )
 
 (custom-set-variables
