@@ -363,7 +363,9 @@ you should place your code here."
     ((arglist-intro . +)
      (arglist-cont . +)
      (arglist-cont-nonempty . +))))
- '(smartparens-global-mode nil))
+ '(electric-indent-mode nil)
+ '(smartparens-global-mode nil)
+ '(web-mode-enable-auto-indentation nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
