@@ -355,6 +355,7 @@ you should place your code here."
   (spacemacs/toggle-smartparens-globally-off)
   ; Disable auto-insertion of matching quotes and parentheses
   (add-hook 'java-mode-hook (lambda () (smartparens-mode -1)))
+  (add-hook 'javascript-mode-hook (lambda () (smartparens-mode -1)))
 )
 
 (custom-set-variables
@@ -367,7 +368,9 @@ you should place your code here."
     ((arglist-intro . +)
      (arglist-cont . +)
      (arglist-cont-nonempty . +))))
- '(smartparens-global-mode nil))
+ '(electric-indent-mode nil)
+ '(smartparens-global-mode nil)
+ '(web-mode-enable-auto-indentation nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
