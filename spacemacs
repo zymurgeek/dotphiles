@@ -347,6 +347,11 @@ you should place your code here."
   (setq whitespace-style '(face tabs trailing lines-tail))
   (global-whitespace-mode t)
   (global-linum-mode)         ; Show line numbers by default
+
+  ; https://www.emacswiki.org/emacs/FillColumnIndicator
+  (require 'fill-column-indicator)
+  (add-hook 'after-change-major-mode-hook 'fci-mode)
+
   (global-git-commit-mode t)
   ; for indentation see:
   ; http://www.gnu.org/software/emacs/manual/html_node/ccmode/c_002doffsets_002dalist.html#c_002doffsets_002dalist
