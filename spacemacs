@@ -350,7 +350,7 @@ you should place your code here."
 
   ; https://www.emacswiki.org/emacs/FillColumnIndicator
   (require 'fill-column-indicator)
-  (add-hook 'after-change-major-mode-hook 'fci-mode)
+  ;(add-hook 'after-change-major-mode-hook 'fci-mode)
 
   (global-git-commit-mode t)
   ; for indentation see:
