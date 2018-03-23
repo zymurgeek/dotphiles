@@ -1,5 +1,6 @@
 load perl
 script load trackbar
+script load notify
 hilight dgreenbaum
 SET hilight_nick_matches_everywhere ON
 SET beep_msg_level MSGS HILIGHT DCCMSGS
