@@ -333,6 +333,15 @@ you should place your code here."
   (setq-default js-indent-level 2)
   (setq-default typescript-expr-indent-offset 2)
   (setq-default typescript-indent-level 2)
+  (setq-local coffee-tab-width 2) ; coffeescript
+  (setq-local javascript-indent-level 2) ; javascript-mode
+  (setq-local js-indent-level 2) ; js-mode
+  (setq-local js2-basic-offset 2) ; js2-mode, in latest js2-mode, it's alias of js-indent-level
+  (setq-local web-mode-markup-indent-offset 2) ; web-mode, html tag in html file
+  (setq-local web-mode-css-indent-offset 2) ; web-mode, css in html file
+  (setq-local web-mode-code-indent-offset 2) ; web-mode, js code in html file
+  (setq-local css-indent-offset 2) ; css-mode
+  (setq-default dotspacemacs-line-numbers t)
   (setq-default large-file-warning-threshold 100000000)
   (setq-default web-mode-attr-indent-offset 2)
   (setq-default web-mode-code-indent-offset 2)
@@ -375,7 +384,8 @@ you should place your code here."
      (arglist-cont-nonempty . +))))
  '(electric-indent-mode nil)
  '(smartparens-global-mode nil)
- '(web-mode-enable-auto-indentation nil))
+ '(web-mode-enable-auto-indentation nil)
+)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
