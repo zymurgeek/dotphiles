@@ -384,7 +384,10 @@ you should place your code here."
      (arglist-cont-nonempty . +))))
  '(electric-indent-mode nil)
  '(smartparens-global-mode nil)
+ '(web-mode-attr-indent-offset 2)
  '(web-mode-enable-auto-indentation nil)
+ '(web-mode-enable-auto-pairing nil)
+ '(web-mode-enable-auto-quoting nil))
 )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
