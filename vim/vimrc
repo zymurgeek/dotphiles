@@ -99,6 +99,7 @@ if !exists(":DiffOrig")
 endif
 
 " Vistar settings
+set textwidth=80
 set expandtab
 set tabstop=2
 set shiftwidth=2
