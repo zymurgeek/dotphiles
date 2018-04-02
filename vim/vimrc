@@ -98,6 +98,10 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+" CtrlP Fuzzy Finder
+" git clone https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " Vistar settings
 set textwidth=80
 set expandtab
