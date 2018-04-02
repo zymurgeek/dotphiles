@@ -99,7 +99,7 @@ if !exists(":DiffOrig")
 endif
 
 " CtrlP Fuzzy Finder
-" git clone https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
+" git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Vistar settings
