@@ -68,6 +68,7 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
+   ;; dotspacemacs-additional-packages '(prettier-js)
    dotspacemacs-additional-packages '()
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -371,6 +372,17 @@ you should place your code here."
   ; Disable auto-insertion of matching quotes and parentheses
   (add-hook 'java-mode-hook (lambda () (smartparens-mode -1)))
   (add-hook 'javascript-mode-hook (lambda () (smartparens-mode -1)))
+
+  ; Prettier-JS disabled due to quirks
+  ; (add-hook 'js2-mode-hook 'prettier-js-mode)
+  ; (add-hook 'web-mode-hook 'prettier-js-mode)
+  ;(seq prettier-js-args '(
+  ;  "--arrow-parens" "always"
+  ;  "--no-bracket-spacing"
+  ;  "--no-semi"
+  ;  "--single-quote"
+  ;  "--trailing-comma" "all"
+  ;))
 )
 
 (custom-set-variables
