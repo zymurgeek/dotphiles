@@ -396,12 +396,14 @@ you should place your code here."
      (arglist-cont . +)
      (arglist-cont-nonempty . +))))
  '(electric-indent-mode nil)
+ '(package-selected-packages
+   (quote
+    (pyenv-mode orgit magit-gitflow helm-projectile helm-make projectile evil-magit magit magit-popup git-commit ghub with-editor anaconda-mode pythonic yapfify yaml-mode ws-butler winum which-key web-mode web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package toc-org tide tagedit sql-indent spaceline smeargle slim-mode scss-mode sass-mode restart-emacs rainbow-delimiters pyvenv pytest py-isort pug-mode powershell popwin pip-requirements persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file noflet neotree move-text mmm-mode markdown-toc macrostep lorem-ipsum livid-mode live-py-mode linum-relative link-hint less-css-mode json-mode js2-refactor js-doc indent-guide hy-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-pydoc helm-mode-manager helm-gitignore helm-flx helm-descbinds helm-css-scss helm-ag google-translate golden-ratio gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu ensime emmet-mode elisp-slime-nav dumb-jump diminish define-word cython-mode csv-mode column-enforce-mode coffee-mode clean-aindent-mode bracketed-paste auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
  '(smartparens-global-mode nil)
  '(web-mode-attr-indent-offset 2)
  '(web-mode-enable-auto-indentation nil)
  '(web-mode-enable-auto-pairing nil)
- '(web-mode-enable-auto-quoting nil)
-)
+ '(web-mode-enable-auto-quoting nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
