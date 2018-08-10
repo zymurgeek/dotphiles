@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+sleep 5
+gnome-terminal \
+    --geometry=132x60+720+27 \
+    --command 'tmux new-session -s dev'

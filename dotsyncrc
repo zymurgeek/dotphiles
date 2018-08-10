@@ -21,6 +21,7 @@ dotsyncrc
 #ack/ackrc
 #aptitude
 #bin:bin
+bin_/dev-terminal:bin/dev-terminal
 #ctags/ctags
 #cmus
 #curl/curlrc
