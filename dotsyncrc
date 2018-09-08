@@ -20,12 +20,12 @@
 dotsyncrc
 #ack/ackrc
 #aptitude
-#bin:bin
+bin/dotsync:bin/dotsync
 #ctags/ctags
 #cmus
 #curl/curlrc
 #git/gitconfig
-#git/gitignore
+git/gitignore
 #git/gitattributes
 #git/tigrc
 #git/gitk
@@ -91,7 +91,7 @@ vim/vimrc
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 vistar-dgreenbaum                git=ANY
-vistar-dgreenbaum2               git=ANY                        files=bin_/dev-terminal:bin/dev-terminal
+vistar-dgreenbaum2               git=ANY                        files=bin/dev-terminal:bin/dev-terminal
 jennings                         git=ANY
 carmine                          git=ANY
 [endhosts]
