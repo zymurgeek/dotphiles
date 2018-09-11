@@ -59,7 +59,7 @@ psqlrc
 #shell/hushlogin
 #shell/urlview
 spacemacs
-#ssh
+ssh/config:.ssh/config
 #subversion
 #task/task
 #task/taskrc
