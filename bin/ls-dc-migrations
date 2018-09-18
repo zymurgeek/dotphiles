@@ -1,24 +1,21 @@
 #!/bin/bash
 
-DB_VER=`psql-dc-geo --quiet --tuples-only --command 'select version_num from alembic_version;' \
-  | sed -e 's/^[ \t]*//'`
-echo "Geo-rest repository:"
-cd ~/repos/geo-rest/alembic/versions
-ls -tr | tail -n 1
+SQL_CMD='select script, description from schema_version order by installed_rank desc limit 1;'
+
+echo "Geo repository:"
+cd ~/repos/vistar/svc/geo/migrations
+ls -v1 V*__* | tail -n 1
 echo "Geo DB:"
-ls ${DB_VER}*.pyc
-echo ""
+psql-dc-geo --quiet --tuples-only --command "$SQL_CMD" | sed -e 's/^[ \t]*//'
 
 echo "Inventory repository:"
 cd ~/repos/vistar/inventory/migrations
 ls -v1 V*__* | tail -n 1
 echo "Inventory DB:"
-psql-dc-inv --quiet --tuples-only --command 'select script, description from schema_version order by installed_rank desc limit 1;' \
-  | sed -e 's/^[ \t]*//'
+psql-dc-inv --quiet --tuples-only --command "$SQL_CMD" | sed -e 's/^[ \t]*//'
 
 echo "Trafficking repository:"
 cd ~/repos/vistar/trafficking/migrations/api
 ls -v1 V*__* | tail -n 1
 echo "Trafficking DB:"
-psql-dc-traf --quiet --tuples-only --command 'select script, description from schema_version order by installed_rank desc limit 1;' \
-  | sed -e 's/^[ \t]*//'
+psql-dc-traf --quiet --tuples-only --command "$SQL_CMD" | sed -e 's/^[ \t]*//'
