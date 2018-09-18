@@ -28,6 +28,17 @@
     #ControlPath ~/.ssh/master/%r@%h:%p
     #ControlPersist 8h
 
+Host gerrit.vistarmedia.com
+    KexAlgorithms +diffie-hellman-group1-sha1
+    Port 29418
+    PubkeyAcceptedKeyTypes +ssh-dss
+
+Host us-east-1a.vpc.vistarmedia.com
+    StrictHostKeyChecking no
+
+Host 10.0.*
+    StrictHostKeyChecking no
+
 # Send a packet every 30 seconds and give up after 10 failures
 Host *
   ServerAliveInterval 30

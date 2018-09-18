@@ -91,7 +91,7 @@ vim/vimrc
 #host8.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 #host9.example.net               rsync=host2.example.com                                #rsync mirror, push from host2
 vistar-dgreenbaum                git=ANY
-vistar-dgreenbaum2               git=ANY                        files=bin/dev-terminal:bin/dev-terminal
+vistar-dgreenbaum2               git=ANY                        files=bin/dev-terminal:bin/dev-terminal,bin/ls-dc-migrations:bin/ls-dc-migrations
 jennings                         git=ANY
 carmine                          git=ANY
 [endhosts]
