@@ -35,6 +35,10 @@ Host gerrit.vistarmedia.com
 
 Host us-east-1a.vpc.vistarmedia.com
     StrictHostKeyChecking no
+    IdentityFile ~/.ssh/id_rsa-dgreenbaum
+
+Host github.com
+     IdentityFile ~/.ssh/id_rsa-dgreenbaum
 
 Host 10.0.*
     StrictHostKeyChecking no
