@@ -3,7 +3,7 @@
 SQL_CMD='select script, description from schema_version order by installed_rank desc limit 1;'
 
 echo "Geo repository:"
-cd ~/repos/vistar/svc/geo/migrations
+cd ~/repos/vistar/svc/geo_rest/migrations
 ls -v1 V*__* | tail -n 1
 echo "Geo DB:"
 psql-dc-geo --quiet --tuples-only --command "$SQL_CMD" | sed -e 's/^[ \t]*//'
