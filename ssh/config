@@ -32,6 +32,7 @@ Host gerrit.vistarmedia.com
     KexAlgorithms +diffie-hellman-group1-sha1
     Port 29418
     PubkeyAcceptedKeyTypes +ssh-dss
+    IdentityFile ~/.ssh/id_rsa-dgreenbaum
 
 Host us-east-1a.vpc.vistarmedia.com
     StrictHostKeyChecking no
