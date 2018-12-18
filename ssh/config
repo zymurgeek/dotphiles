@@ -28,6 +28,15 @@
     #ControlPath ~/.ssh/master/%r@%h:%p
     #ControlPersist 8h
 
+
+Host HQSML-1685345
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+
+Host gerrit.xfinity.com
+  KexAlgorithms +diffie-hellman-group1-sha1
+
 Host gerrit.vistarmedia.com
     KexAlgorithms +diffie-hellman-group1-sha1
     Port 29418
