@@ -29,7 +29,7 @@
     #ControlPersist 8h
 
 
-Host HQSML-1685345
+Host *
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_rsa
