@@ -4,7 +4,7 @@ import logging
 import os
 import sys
 
-def rmIfInTree(dirRootName, subjectPath, dryRun):
+def rmIfInTree(dirRootName, subjectPath, containsName, dryRun):
 	dirRootName = os.path.abspath(dirRootName)
 	subjectPath = os.path.abspath(subjectPath)
 	if not os.path.isdir(dirRootName):
@@ -20,7 +20,8 @@ def rmIfInTree(dirRootName, subjectPath, dryRun):
 		logging.debug("Checking directory " + compPath)
 		if compPath != subjectDir:
 			for compBase in compBases:
-				if compBase == subjectBase:
+				if compBase == subjectBase or \
+                                (containsName and subjectBase in compBase):
 					compPath = os.path.join(compPath, \
 					compBase)
 					logging.debug('Found comparision ' \
@@ -54,12 +55,16 @@ if __name__ == '__main__':
 	from optparse import OptionParser
 
 	parser = OptionParser(usage)
-	parser.add_option("-l", "--logging", action="store_true",
-		dest="logging", default=False,
-		help="Log debug information while running")
 	parser.add_option("-d", "--dry-run", action="store_true",
 		dest="dryRun", default=False,
 		help="Don't actually remove any files")
+	parser.add_option("-l", "--logging", action="store_true",
+		dest="logging", default=False,
+		help="Log debug information while running")
+	parser.add_option("-c", "--contains-name", action="store_true",
+		dest="containsName", default=False,
+		help="Match files in <dir> if their name contains <file> " \
+                "rather than matches <file> exactly")
 	(options, args) = parser.parse_args()
 	if options.logging:
 		logging.basicConfig(level=logging.DEBUG,
@@ -73,4 +78,4 @@ if __name__ == '__main__':
 
 	dir = args[0]
 	for arg in args[1:]:
-           	rmIfInTree(dir, arg, options.dryRun)
+           	rmIfInTree(dir, arg, options.containsName, options.dryRun)
