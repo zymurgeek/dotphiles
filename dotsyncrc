@@ -21,6 +21,7 @@ dotsyncrc
 #ack/ackrc
 #aptitude
 bin/dotsync:bin/dotsync
+bin/rmifintree.py:bin/rmifintree.py
 #ctags/ctags
 #cmus
 #curl/curlrc
@@ -93,7 +94,6 @@ vim/vimrc
 HQSML-1685345                    git=ANY
 carmine                          git=ANY
 jennings                         git=ANY
-vistar-dgreenbaum                git=ANY
 vistar-dgreenbaum2               git=ANY                        files=bin/dev-terminal:bin/dev-terminal,bin/ls-dc-migrations:bin/ls-dc-migrations
 [endhosts]
 
